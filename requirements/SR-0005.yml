@@ -1,0 +1,16 @@
+uid: SR-0005
+type: system_requirement
+status: approved
+title: Provenance is authentic
+text: Consumers can validate the authenticity of the provenance attestation through a digital
+  signature from a private key accessible only to the build platform.
+rationale: A signature bound to the build platform lets consumers confirm the provenance was
+  issued by the real builder and was not altered in transit.
+links:
+- target: UR-0002
+  type: implements
+attrs:
+  source_ref: Provenance is authentic
+  slsa_track: Build
+  slsa_group: Provenance generation
+  slsa_level: 2

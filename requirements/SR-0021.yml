@@ -1,0 +1,17 @@
+uid: SR-0021
+type: system_requirement
+status: approved
+title: Protected Named References
+text: The SCS lets an organization enforce customized technical controls for named references,
+  indicate which references are protected, and records the controls enforced on them in contemporaneously
+  produced attestations associated with the corresponding revisions.
+rationale: Marking branches as protected and recording the controls enforced on them produces
+  the evidence higher-level consumers rely on.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Protected Named References
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 3

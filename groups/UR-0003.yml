@@ -1,0 +1,12 @@
+uid: UR-0003
+type: user_requirement
+status: approved
+title: Build — Isolation strength
+text: Requirements on the build platform to run builds on hosted infrastructure and, at higher
+  levels, in an isolated environment free of unintended external influence.
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: Isolation strength
+  slsa_track: Build

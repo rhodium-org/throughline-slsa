@@ -1,0 +1,16 @@
+uid: SR-0013
+type: system_requirement
+status: approved
+title: Repositories are uniquely identifiable
+text: The SCS defines a repository ID that is uniquely identifiable within the SCS via a stable
+  locator, such as a URI.
+rationale: A stable, unique repository identifier lets attestations and consumers refer to
+  exactly one source repository.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Repositories are uniquely identifiable
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 1

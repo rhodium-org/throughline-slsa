@@ -1,0 +1,13 @@
+uid: INT-0002
+type: intent
+status: approved
+title: Source revisions have verifiable authorship, history and provenance
+text: The SLSA Source track exists so that the authoring, review and management of source
+  code can be verified against graded levels (Source L1 through L4). Higher levels move from
+  source merely being version-controlled, through continuous, attested history and provenance,
+  to continuously enforced technical controls and two-party review — giving consumers a graded
+  basis for trusting how a source revision was produced, everything that happens before a
+  revision reaches a builder.
+normative: false
+attrs:
+  source_ref: Source track

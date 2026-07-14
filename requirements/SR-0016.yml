@@ -1,0 +1,17 @@
+uid: SR-0016
+type: system_requirement
+status: approved
+title: Source Verification Summary Attestations
+text: The SCS generates a Source Verification Summary Attestation (VSA) indicating the SLSA
+  Source level of any revision at Level 1 or above, and makes it fetchable by any consumer
+  authorized to access the revision.
+rationale: A VSA communicates a revision's source level to consumers in a standard, verifiable
+  form; absence of a VSA means Source Level 0.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Source Verification Summary Attestations
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 1

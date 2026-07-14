@@ -1,0 +1,15 @@
+uid: SR-0003
+type: system_requirement
+status: approved
+title: Distribute provenance
+text: The producer distributes provenance to artifact consumers.
+rationale: Consumers can only verify an artifact's integrity and origin if the provenance
+  describing how it was built reaches them.
+links:
+- target: UR-0001
+  type: implements
+attrs:
+  source_ref: Distribute provenance
+  slsa_track: Build
+  slsa_group: Producer
+  slsa_level: 1

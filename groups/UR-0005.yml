@@ -1,0 +1,13 @@
+uid: UR-0005
+type: user_requirement
+status: approved
+title: Source — Source Control System
+text: Requirements on the source control system (SCS) — to make repositories and revisions
+  identifiable and immutable, expose human-readable changes, and issue verifiable attestations
+  about how revisions were produced, governed and protected.
+links:
+- target: INT-0002
+  type: derives_from
+attrs:
+  source_ref: Source Control System
+  slsa_track: Source

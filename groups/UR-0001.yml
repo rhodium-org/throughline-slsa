@@ -1,0 +1,12 @@
+uid: UR-0001
+type: user_requirement
+status: approved
+title: Build — Producer
+text: Requirements on the producer — the organization that owns and releases the software
+  — to choose a capable build platform, build consistently, and distribute provenance to consumers.
+links:
+- target: INT-0001
+  type: derives_from
+attrs:
+  source_ref: Producer
+  slsa_track: Build

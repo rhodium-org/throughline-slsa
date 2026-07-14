@@ -1,0 +1,16 @@
+uid: SR-0004
+type: system_requirement
+status: approved
+title: Provenance exists
+text: The build process generates provenance that unambiguously identifies the output package
+  by cryptographic digest and describes how that package was produced.
+rationale: Provenance that names the exact artifact and its build lets consumers detect mistakes
+  and enables the stronger checks that higher levels add.
+links:
+- target: UR-0002
+  type: implements
+attrs:
+  source_ref: Provenance exists
+  slsa_track: Build
+  slsa_group: Provenance generation
+  slsa_level: 1

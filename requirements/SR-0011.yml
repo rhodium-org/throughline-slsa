@@ -1,0 +1,18 @@
+uid: SR-0011
+type: system_requirement
+status: approved
+title: Safe expunging process
+text: Where the SCS allows content to be expunged from a repository and its history without
+  a public record, the organization only does so to meet legal or privacy compliance requirements,
+  documents the process and its tracking, and requires an administrator plus at least one
+  other trusted person to trigger it.
+rationale: Removing content without a record can break downstream integrity, so it is constrained
+  to compliance needs and gated by more than one person.
+links:
+- target: UR-0004
+  type: implements
+attrs:
+  source_ref: Safe expunging process
+  slsa_track: Source
+  slsa_group: Organization
+  slsa_level: 1

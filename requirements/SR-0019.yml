@@ -1,0 +1,17 @@
+uid: SR-0019
+type: system_requirement
+status: approved
+title: Identity Management
+text: The SCS provides an identity management system to identify and authenticate actors,
+  lets organizations specify which actors and roles may perform sensitive actions, and attributes
+  activity to authenticated identities.
+rationale: Attributing actions to authenticated identities is what makes accountability and
+  role-based policy enforcement possible.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Identity Management
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 2

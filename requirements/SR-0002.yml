@@ -1,0 +1,16 @@
+uid: SR-0002
+type: system_requirement
+status: approved
+title: Follow a consistent build process
+text: The producer builds their artifact in a consistent manner, such that verifiers can form
+  expectations about the build process.
+rationale: Consistency lets verifiers establish what a legitimate build looks like and detect
+  deviations from it.
+links:
+- target: UR-0001
+  type: implements
+attrs:
+  source_ref: Follow a consistent build process
+  slsa_track: Build
+  slsa_group: Producer
+  slsa_level: 1

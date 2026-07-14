@@ -1,0 +1,18 @@
+uid: SR-0010
+type: system_requirement
+status: approved
+title: Configure the SCS to control access and enforce history
+text: The organization configures access controls, using the SCS-provided identity management,
+  to restrict sensitive operations on the repository; configures the SCS to produce a reliable
+  change history for its consumable revisions; and, where tags exist, prevents them from being
+  moved or deleted.
+rationale: Access controls and an immutable history are the foundation for trusting who changed
+  the source and what changed.
+links:
+- target: UR-0004
+  type: implements
+attrs:
+  source_ref: Configure the SCS to control access and enforce history
+  slsa_track: Source
+  slsa_group: Organization
+  slsa_level: 1

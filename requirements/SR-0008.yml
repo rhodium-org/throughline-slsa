@@ -1,0 +1,16 @@
+uid: SR-0008
+type: system_requirement
+status: approved
+title: Isolated
+text: The build platform ensured that build steps ran in an isolated environment, free of
+  unintended external influence.
+rationale: Isolation prevents one build from tampering with another, poisoning shared caches,
+  or reaching signing credentials.
+links:
+- target: UR-0003
+  type: implements
+attrs:
+  source_ref: Isolated
+  slsa_track: Build
+  slsa_group: Isolation strength
+  slsa_level: 3

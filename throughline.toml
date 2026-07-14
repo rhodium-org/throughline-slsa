@@ -1,0 +1,68 @@
+[project]
+name = "SLSA (throughline source)"
+format_version = 2
+
+# A throughline *source*: a standalone graph a consuming project composes via
+# throughline-compose, importing it under a namespace (e.g. `slsa`) and referencing
+# requirements as `slsa:SR-0007`. The UIDs here are this source's own and immutable; the
+# published SLSA requirement name (e.g. `Distribute provenance`) lives in
+# `attrs.source_ref`, never in the UID.
+#
+# Shape: SLSA v1.2 defines two normative *tracks* — Build and Source — and each is a
+# genuinely distinct purpose (integrity of the build vs. integrity of the source), so this
+# source has TWO root intents, one per track (not a single umbrella). Each track's
+# requirement *groups* (Producer / Provenance generation / Isolation strength for Build;
+# Organization / Source Control System for Source) are user_requirements that derive from
+# their track root, and each individual requirement is a system_requirement implementing its
+# group. The graded facet is the minimum level at which a requirement becomes mandatory,
+# carried in `attrs.slsa_level` (the SLSA analogue of ASVS's L1/L2/L3), and the track it
+# belongs to in `attrs.slsa_track`.
+#
+# Edition handling: SLSA versions itself (v0.1 -> v1.0 was a big restructure; v1.1/v1.2 are
+# additive point releases that added the Source track). Editions are git tags of this one
+# repo (v1.2 now). A future full restructure would become a release branch, the way ASVS
+# handles v4 -> v5.
+
+[grounding]
+root_types = ["intent"]
+delivery_roots = ["intent"]
+ground_link_types = ["derives_from", "implements"]
+ai_origins = ["ai", "hybrid"]
+
+# Requirement groups are user_requirements grouping a track; each SLSA requirement is a
+# system_requirement implementing its group and carrying its track + minimum level.
+[types.user_requirement]
+attrs.source_ref = { required = true }
+
+[types.system_requirement]
+attrs.source_ref = { required = true }
+attrs.slsa_track = { required = true }
+attrs.slsa_level = { required = true }
+
+[links]
+types = ["derives_from", "implements", "relates"]
+
+[link_rules]
+derives_from = { from = ["user_requirement"], to = ["intent"] }
+implements   = { from = ["system_requirement"], to = ["user_requirement"] }
+
+[status]
+values = ["proposed", "draft", "deferred", "approved", "ratified", "implemented",
+          "verified", "suspect", "rejected", "deleted"]
+
+[transitions]
+proposed    = ["draft", "approved", "ratified", "deferred", "rejected", "deleted"]
+draft       = ["approved", "deferred", "rejected", "deleted"]
+deferred    = ["draft", "approved", "rejected", "deleted"]
+approved    = ["ratified", "implemented", "deferred", "suspect", "rejected", "deleted"]
+ratified    = ["implemented", "suspect", "rejected", "deleted"]
+implemented = ["verified", "suspect", "rejected", "deleted"]
+verified    = ["implemented", "suspect", "deleted"]
+suspect     = ["approved", "ratified", "implemented", "verified", "rejected", "deleted"]
+rejected    = ["draft", "deleted"]
+
+# `tl docs` regenerates docs/spec.md from the graph; `tl docs --check` gates it.
+# This activates the `unpublished` rule: every live normative item must be
+# referenced by a published document or `tl check --strict` fails.
+[docs]
+paths = ["docs/*.md", "README.md"]

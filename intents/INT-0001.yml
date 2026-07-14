@@ -1,0 +1,12 @@
+uid: INT-0001
+type: intent
+status: approved
+title: Software artifacts are built with verifiable integrity and provenance
+text: The SLSA Build track exists so that a software artifact is produced by a build process
+  whose integrity and provenance can be verified against graded levels (Build L0 through L3).
+  Higher levels move from provenance merely existing, through provenance signed by a hosted
+  platform, to hardened builds whose provenance is strongly resistant to forgery — giving
+  consumers a graded basis for trusting how an artifact was produced rather than ad-hoc judgement.
+normative: false
+attrs:
+  source_ref: Build track

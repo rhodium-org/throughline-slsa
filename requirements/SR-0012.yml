@@ -1,0 +1,17 @@
+uid: SR-0012
+type: system_requirement
+status: approved
+title: Continuous technical controls
+text: The organization provides evidence of continuous enforcement, via technical controls,
+  for any claims made in Source Provenance attestations or VSAs, and documents the meaning
+  of those controls.
+rationale: A claim about how revisions are produced is only credible if the control behind
+  it is enforced continuously and its meaning is written down.
+links:
+- target: UR-0004
+  type: implements
+attrs:
+  source_ref: Continuous technical controls
+  slsa_track: Source
+  slsa_group: Organization
+  slsa_level: 3

@@ -1,0 +1,17 @@
+uid: SR-0015
+type: system_requirement
+status: approved
+title: Human readable changes
+text: The SCS provides tooling to display the changes between one source revision and another
+  in human-readable form for all plain-text changes, and where possible for non-plain-text
+  changes.
+rationale: Reviewers can only judge whether a change is appropriate if they can see what actually
+  changed.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Human readable changes
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 1

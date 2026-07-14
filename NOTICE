@@ -1,0 +1,19 @@
+standard-slsa
+Copyright 2026 Time Back Solutions Limited
+
+This product includes work developed by Time Back Solutions Limited.
+
+Licensed under the Apache License, Version 2.0. See the LICENSE file for the
+full terms.
+
+This repository is a throughline *source*: a requirements graph, not a program. It
+re-expresses SLSA (Supply-chain Levels for Software Artifacts), version 1.2, as a
+grounded IDD graph so consuming projects can compose it with throughline-compose.
+
+SLSA is a project of the Open Source Security Foundation (OpenSSF), a Linux Foundation
+project, published under the Creative Commons Attribution 4.0 International licence
+(CC BY 4.0). The requirement text reproduced here in items' text/rationale/attrs.source_ref
+is derived from the SLSA specification and remains the work of the OpenSSF and its
+contributors; this repository claims no ownership over that content and reproduces it,
+under CC BY 4.0, for interoperability. See https://slsa.dev/spec/v1.2/ for the
+authoritative source.

@@ -1,0 +1,17 @@
+uid: SR-0020
+type: system_requirement
+status: approved
+title: Source Provenance
+text: The SCS creates Source Provenance contemporaneously with each branch update, providing
+  a credible, auditable record of changes, and makes it accessible to any consumer authorized
+  to access the revision.
+rationale: Provenance created at the moment of change is tamper-resistant evidence of how
+  a revision came to be.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: Source Provenance
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 2

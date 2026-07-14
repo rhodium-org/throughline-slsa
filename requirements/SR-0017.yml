@@ -1,0 +1,17 @@
+uid: SR-0017
+type: system_requirement
+status: approved
+title: History
+text: The SCS records all changes to named references — when they occurred, who made them,
+  and the new revision ID — and, where revisions have ancestry, only allows a branch to advance
+  to revisions that descend from its current revision.
+rationale: A complete, append-only history enables audit and prevents unauthorized rewrites
+  of a branch.
+links:
+- target: UR-0005
+  type: implements
+attrs:
+  source_ref: History
+  slsa_track: Source
+  slsa_group: Source Control System
+  slsa_level: 2

@@ -1,0 +1,16 @@
+uid: SR-0001
+type: system_requirement
+status: approved
+title: Choose an appropriate build platform
+text: The producer selects a build platform that is capable of reaching their desired SLSA
+  Build level.
+rationale: A producer can only achieve a given level of assurance if the platform they build
+  on is itself capable of meeting that level's requirements.
+links:
+- target: UR-0001
+  type: implements
+attrs:
+  source_ref: Choose an appropriate build platform
+  slsa_track: Build
+  slsa_group: Producer
+  slsa_level: 1
