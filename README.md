@@ -1,4 +1,4 @@
-# standard-slsa
+# throughline-slsa
 
 **SLSA (Supply-chain Levels for Software Artifacts)** expressed as a
 [throughline](https://pypi.org/project/throughline/) **source** — a standalone,
@@ -60,7 +60,7 @@ Under each track root:
 
 SLSA versions itself (v0.1 → v1.0 was a full restructure; v1.1/v1.2 added the Source
 track additively). Editions are **git tags** of this one repo (`v1.2` now); a future full
-restructure would become a release branch, the way `standard-asvs` handles v4 → v5.
+restructure would become a release branch, the way `throughline-asvs` handles v4 → v5.
 
 ## Composing it
 
@@ -69,7 +69,7 @@ In a consuming throughline project's `throughline.toml`:
 ```toml
 [[sources]]
 namespace = "slsa"
-url = "https://github.com/rhodium-org/standard-slsa"
+url = "https://github.com/timebacksolutions/throughline-slsa"
 ref = "v1.2"
 ```
 
