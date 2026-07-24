@@ -41,6 +41,8 @@ It carries
 
 > Requirements on the producer — the organization that owns and releases the software — to choose a capable build platform, build consistently, and distribute provenance to consumers.
 
+*Derives from:* INT-0001
+
 **source_ref**: Producer · **slsa_track**: Build
 <!-- tl:end -->
 
@@ -59,6 +61,8 @@ It carries
 
 > Requirements on the build platform to generate provenance that describes how a package was produced, and to make that provenance authentic and then unforgeable as the Build level rises.
 
+*Derives from:* INT-0001
+
 **source_ref**: Provenance generation · **slsa_track**: Build
 <!-- tl:end -->
 
@@ -76,6 +80,8 @@ It carries
 **UR-0003 — Build — Isolation strength** — `user_requirement`, status `approved`
 
 > Requirements on the build platform to run builds on hosted infrastructure and, at higher levels, in an isolated environment free of unintended external influence.
+
+*Derives from:* INT-0001
 
 **source_ref**: Isolation strength · **slsa_track**: Build
 <!-- tl:end -->
@@ -104,6 +110,8 @@ It carries
 
 > Requirements on the organization that produces source revisions — to choose a capable source control system, control access and enforce history, and (at higher levels) continuously enforce technical controls.
 
+*Derives from:* INT-0002
+
 **source_ref**: Organization · **slsa_track**: Source
 <!-- tl:end -->
 
@@ -122,6 +130,8 @@ It carries
 **UR-0005 — Source — Source Control System** — `user_requirement`, status `approved`
 
 > Requirements on the source control system (SCS) — to make repositories and revisions identifiable and immutable, expose human-readable changes, and issue verifiable attestations about how revisions were produced, governed and protected.
+
+*Derives from:* INT-0002
 
 **source_ref**: Source Control System · **slsa_track**: Source
 <!-- tl:end -->
