@@ -8,7 +8,7 @@ full terms.
 
 This repository is a throughline *source*: a requirements graph, not a program. It
 re-expresses SLSA (Supply-chain Levels for Software Artifacts), version 1.2, as a
-grounded IDD graph so consuming projects can compose it with throughline-compose.
+grounded IDD graph so consuming projects can compose it with throughline.
 
 SLSA is a project of the Open Source Security Foundation (OpenSSF), a Linux Foundation
 project, published under the Creative Commons Attribution 4.0 International licence
