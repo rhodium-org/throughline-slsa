@@ -1,3 +1,4 @@
 prefix: UR
 digits: 4
 title: Requirement groups
+type: user_requirement
