@@ -1,11 +1,12 @@
 uid: SR-0008
 type: system_requirement
-status: approved
+status: proposed
 title: Isolated
-text: The build platform ensured that build steps ran in an isolated environment, free of
-  unintended external influence.
-rationale: Isolation prevents one build from tampering with another, poisoning shared caches,
-  or reaching signing credentials.
+text: The build platform ensured that build steps ran in an isolated environment,
+  free of unintended external influence.
+rationale: Isolation prevents one build from tampering with another, poisoning shared
+  caches, or reaching signing credentials.
+normative: true
 links:
 - target: UR-0003
   type: implements

@@ -1,11 +1,12 @@
 uid: SR-0002
 type: system_requirement
-status: approved
+status: proposed
 title: Follow a consistent build process
-text: The producer builds their artifact in a consistent manner, such that verifiers can form
-  expectations about the build process.
-rationale: Consistency lets verifiers establish what a legitimate build looks like and detect
-  deviations from it.
+text: The producer builds their artifact in a consistent manner, such that verifiers
+  can form expectations about the build process.
+rationale: Consistency lets verifiers establish what a legitimate build looks like
+  and detect deviations from it.
+normative: true
 links:
 - target: UR-0001
   type: implements

@@ -1,10 +1,11 @@
 uid: UR-0004
 type: user_requirement
-status: approved
+status: proposed
 title: Source — Organization
-text: Requirements on the organization that produces source revisions — to choose a capable
-  source control system, control access and enforce history, and (at higher levels) continuously
-  enforce technical controls.
+text: Requirements on the organization that produces source revisions — to choose
+  a capable source control system, control access and enforce history, and (at higher
+  levels) continuously enforce technical controls.
+normative: true
 links:
 - target: INT-0002
   type: derives_from

@@ -1,10 +1,11 @@
 uid: UR-0002
 type: user_requirement
-status: approved
+status: proposed
 title: Build — Provenance generation
-text: Requirements on the build platform to generate provenance that describes how a package
-  was produced, and to make that provenance authentic and then unforgeable as the Build level
-  rises.
+text: Requirements on the build platform to generate provenance that describes how
+  a package was produced, and to make that provenance authentic and then unforgeable
+  as the Build level rises.
+normative: true
 links:
 - target: INT-0001
   type: derives_from

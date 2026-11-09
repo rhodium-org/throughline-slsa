@@ -1,12 +1,13 @@
 uid: SR-0015
 type: system_requirement
-status: approved
+status: proposed
 title: Human readable changes
-text: The SCS provides tooling to display the changes between one source revision and another
-  in human-readable form for all plain-text changes, and where possible for non-plain-text
-  changes.
-rationale: Reviewers can only judge whether a change is appropriate if they can see what actually
-  changed.
+text: The SCS provides tooling to display the changes between one source revision
+  and another in human-readable form for all plain-text changes, and where possible
+  for non-plain-text changes.
+rationale: Reviewers can only judge whether a change is appropriate if they can see
+  what actually changed.
+normative: true
 links:
 - target: UR-0005
   type: implements

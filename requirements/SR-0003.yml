@@ -1,10 +1,11 @@
 uid: SR-0003
 type: system_requirement
-status: approved
+status: proposed
 title: Distribute provenance
 text: The producer distributes provenance to artifact consumers.
 rationale: Consumers can only verify an artifact's integrity and origin if the provenance
   describing how it was built reaches them.
+normative: true
 links:
 - target: UR-0001
   type: implements

@@ -1,11 +1,12 @@
 uid: SR-0009
 type: system_requirement
-status: approved
+status: proposed
 title: Choose an appropriate source control system
-text: The organization producing source revisions selects a source control system (SCS) that
-  is capable of reaching their desired SLSA Source level.
-rationale: The source level an organization can reach is bounded by the capabilities of the
-  SCS they choose.
+text: The organization producing source revisions selects a source control system
+  (SCS) that is capable of reaching their desired SLSA Source level.
+rationale: The source level an organization can reach is bounded by the capabilities
+  of the SCS they choose.
+normative: true
 links:
 - target: UR-0004
   type: implements

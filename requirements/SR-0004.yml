@@ -1,11 +1,12 @@
 uid: SR-0004
 type: system_requirement
-status: approved
+status: proposed
 title: Provenance exists
-text: The build process generates provenance that unambiguously identifies the output package
-  by cryptographic digest and describes how that package was produced.
-rationale: Provenance that names the exact artifact and its build lets consumers detect mistakes
-  and enables the stronger checks that higher levels add.
+text: The build process generates provenance that unambiguously identifies the output
+  package by cryptographic digest and describes how that package was produced.
+rationale: Provenance that names the exact artifact and its build lets consumers
+  detect mistakes and enables the stronger checks that higher levels add.
+normative: true
 links:
 - target: UR-0002
   type: implements

@@ -1,11 +1,13 @@
 uid: SR-0006
 type: system_requirement
-status: approved
+status: proposed
 title: Provenance is unforgeable
-text: Provenance is strongly resistant to forgery by tenants; secret material used to sign
-  it is stored in secure systems and is not accessible to user-defined build steps.
-rationale: If a tenant's own build steps could reach the signing key, they could forge provenance
-  for a package they did not legitimately build.
+text: Provenance is strongly resistant to forgery by tenants; secret material used
+  to sign it is stored in secure systems and is not accessible to user-defined build
+  steps.
+rationale: If a tenant's own build steps could reach the signing key, they could
+  forge provenance for a package they did not legitimately build.
+normative: true
 links:
 - target: UR-0002
   type: implements

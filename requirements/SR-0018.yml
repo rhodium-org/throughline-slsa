@@ -1,12 +1,13 @@
 uid: SR-0018
 type: system_requirement
-status: approved
+status: proposed
 title: Continuity
-text: For each technical control claimed in a VSA, the SCS establishes and tracks continuity
-  from a specific start revision, re-establishing it from a new revision after any lapse,
-  with exceptions only via the safe expunging process.
-rationale: Continuity demonstrates that a claimed control has been enforced without gaps,
-  not just at a single point in time.
+text: For each technical control claimed in a VSA, the SCS establishes and tracks
+  continuity from a specific start revision, re-establishing it from a new revision
+  after any lapse, with exceptions only via the safe expunging process.
+rationale: Continuity demonstrates that a claimed control has been enforced without
+  gaps, not just at a single point in time.
+normative: true
 links:
 - target: UR-0005
   type: implements

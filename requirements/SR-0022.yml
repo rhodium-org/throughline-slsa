@@ -1,12 +1,14 @@
 uid: SR-0022
 type: system_requirement
-status: approved
+status: proposed
 title: Two-party review
-text: Changes to protected branches are agreed to by two or more trusted persons before submission,
-  with review covering at least security-relevant properties, applied to the final submitted
-  revision; the SCS presents reviewers with a clear representation of the change being accepted.
-rationale: Requiring a second trusted person prevents any single actor from unilaterally introducing
-  a malicious change.
+text: Changes to protected branches are agreed to by two or more trusted persons
+  before submission, with review covering at least security-relevant properties,
+  applied to the final submitted revision; the SCS presents reviewers with a clear
+  representation of the change being accepted.
+rationale: Requiring a second trusted person prevents any single actor from unilaterally
+  introducing a malicious change.
+normative: true
 links:
 - target: UR-0005
   type: implements

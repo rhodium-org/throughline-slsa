@@ -1,12 +1,13 @@
 uid: SR-0014
 type: system_requirement
-status: approved
+status: proposed
 title: Revisions are immutable and uniquely identifiable
-text: The SCS defines a revision ID that is uniquely identifiable within the repository; where
-  the revision ID is not a content digest, the SCS documents how the revision's immutability
-  is established.
-rationale: An immutable, unique revision identifier guarantees that a reference always resolves
-  to identical source content.
+text: The SCS defines a revision ID that is uniquely identifiable within the repository;
+  where the revision ID is not a content digest, the SCS documents how the revision's
+  immutability is established.
+rationale: An immutable, unique revision identifier guarantees that a reference always
+  resolves to identical source content.
+normative: true
 links:
 - target: UR-0005
   type: implements

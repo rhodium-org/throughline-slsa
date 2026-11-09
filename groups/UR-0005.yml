@@ -1,10 +1,11 @@
 uid: UR-0005
 type: user_requirement
-status: approved
+status: proposed
 title: Source — Source Control System
-text: Requirements on the source control system (SCS) — to make repositories and revisions
-  identifiable and immutable, expose human-readable changes, and issue verifiable attestations
-  about how revisions were produced, governed and protected.
+text: Requirements on the source control system (SCS) — to make repositories and
+  revisions identifiable and immutable, expose human-readable changes, and issue
+  verifiable attestations about how revisions were produced, governed and protected.
+normative: true
 links:
 - target: INT-0002
   type: derives_from

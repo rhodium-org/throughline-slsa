@@ -1,11 +1,12 @@
 uid: SR-0007
 type: system_requirement
-status: approved
+status: proposed
 title: Hosted
 text: All build steps ran using a hosted build platform on shared or dedicated infrastructure,
   not on an individual's workstation.
-rationale: A managed, hosted platform provides security controls and auditability that an
-  individual developer machine cannot.
+rationale: A managed, hosted platform provides security controls and auditability
+  that an individual developer machine cannot.
+normative: true
 links:
 - target: UR-0003
   type: implements
